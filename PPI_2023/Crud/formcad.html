@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar história</title>
+
+    <style>
+         div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+    <h1> Cadastrar história</h1>
+
+    <form action="cadastrar.php" method="post">
+        ID
+        <input type="text" name="id"> <br><br>
+        1° escolha
+        <input type="text" name="texto1"> <br> <br>
+        2° escolha
+        <input type="text" name="texto2"> <br> <br>
+        ID de destino da 1° escolha
+        <input type="text" name="escolha1"> <br> <br>
+        ID de destino da 2° escolha
+        <input type="text" name="escolha2"> <br> <br>
+        Nome da imagem
+        <input type="text" name="imagem"> <br> <br>
+        Texto
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
+
+    
+</body>
+</html>

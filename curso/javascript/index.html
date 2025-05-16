@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Javascript</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        label{
+            font-size: 30px;
+        }
+        input{
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body onresize="console.log('Houve uma mudança nas dimenções da tela!!')">
+
+    <h1>Aprendendo Javascript.</h1>
+
+<p id="teste"></p>
+
+<p id="teste2"></p>
+
+<p id="teste3"></p>
+
+<script>
+
+const ajax = new XMLHttpRequest();
+ajax.open('GET', 'https://viacep.com.br/ws/01001000/json/');
+ajax.send();
+
+ajax.onload = function () {
+    document.getElementById("teste").innerHTML = this.responseText;
+}
+
+</script>
+</body>
+
+</html>

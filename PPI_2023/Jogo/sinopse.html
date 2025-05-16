@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.text-container {
+    margin: 50px;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    white-space: pre-line;
+    animation: appear 6s forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+#skip-button {
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 100px;
+}
+a{
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 43px;
+    text-decoration: none;
+}
+a:hover{
+    text-shadow: 6px 6px 12px white;
+    color: brown;
+}
+    </style>
+
+</head>
+<body>
+
+    <audio autoplay loop>
+        <source src="som/inicial.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+
+
+    <div class="text-container">
+        <p class="text hidden" id="text">
+            No ano de 2019 surge uma doença resultado de uma bactéria desconhecida chamada então de "Cryses", cujo sintomas deixa o infectado agressivo  e leva à perda da capacidade racional fazendo assim que se tornasse algo devastador. Assim, as pessoas infectadas com essa doença atacam as pessoas que não estão infectadas. As poucas chances de cura e tratamento, fizeram com que se espalhasse rapidamente pelo mundo, extinguindo quese 90% da população mundial.Você assume o papel de um sobrevivente de um mundo pós-apocalíptico.Faça as escolhas certas e sobreviva aos infectados.Senhores(as) boa sorte!!
+        </p>
+        <button id="skip-button"><a href="index.html">Voltar</a></button>
+        <button id="skip-button"><a href="inicial.html">Avançar</button>
+    </div>
+    
+</body>
+</html>

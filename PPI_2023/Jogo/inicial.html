@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+
+    <style>
+        body {
+            background-image: url(imagem/R.jpeg);
+            height: 100%;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+}
+
+.text-container {
+    margin: 50px;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    white-space: pre-line;
+    animation: appear 6s forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+#skip-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+a{
+    margin-top: 80%;
+    margin-left: -30%;
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 43px;
+    text-decoration: none;
+
+}
+a:hover{
+    text-shadow: 3px 1px 5px rgb(0, 140, 255);
+    color: rgb(0, 0, 0);
+}
+    </style>
+
+</head>
+<body>
+
+    <div class="text-container">
+        <p class="text hidden" id="text">
+            Pense bem em suas decisões, pois uma escolha errada pode ter consequências drásticas.
+            Senhores(a)... Boa sorte!
+        </p><BR><br>
+        <button id="skip-button"><a href="game.php?id=0">Jogar</a></button>
+    </div>
+    
+</body>
+</html>

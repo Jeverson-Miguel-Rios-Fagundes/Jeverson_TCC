@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.text-container {
+    margin: 50px;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    white-space: pre-line;
+    animation: appear 6s forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+#skip-button {
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 100px;
+}
+a{
+    background: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    font-size: 43px;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-shadow: 6px 6px 12px white;
+    color: brown;
+}
+    </style>
+
+</head>
+<body>
+
+    <audio autoplay loop>
+        <source src="som/inicial.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+      </audio>
+
+
+    <div class="text-container">
+        <p class="text hidden" id="text">
+            In 2019, a disease emerged resulting from an unknown bacteria called "Cryses", whose symptoms make the infected person aggressive and lead to the loss of rational capacity, making it something devastating. Thus, people infected with this disease attack people who are not infected. The few chances of cure and treatment caused it to spread rapidly throughout the world, extinguishing 90% of the world's population. You take on the role of a survivor of a post-apocalyptic world. Make the right choices and survive the infected. Gentlemen ( as) good luck!!
+        </p>
+        <button id="skip-button"><a href="ingles.html">Back</a></button>
+        <button id="skip-button"><a href="inicialgles.html">Next</button>
+    </div>
+    
+</body>
+</html>
